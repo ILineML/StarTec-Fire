@@ -1,6 +1,18 @@
+h1{
+	font-size: 3em;
+}
+
+.texto_home{
+	font-size: medium;
+	border-style: solid;
+	margin: 30px;
+	font-family: 'Times New Roman', Times, serif;
+	
+}
+
 .logo{
     width: 150px;
-    height: 150px;
+	height: 150px;
 }
 
 .redes_sociais{
