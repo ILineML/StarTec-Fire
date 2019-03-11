@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=pt-br>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,7 @@
 <body>
     
         <div>
-                <img src="Imagens/Logo.jpg" alt="Logo StarTec - Fire" class="logo">
+                <img src="Imagens/Logo01.png" alt="Logo StarTec - Fire" class="logo">
     
                 <a href="#" style="cursor:pointer;"><img src="Imagens/face.png" alt="Página facebook" class="redes_sociais" style="margin-left:1050px"></a> 
                 <a href="#" style="cursor:pointer;"><img src="Imagens/insta.png" alt="Página Instagram" class="redes_sociais" style="margin-left: 10px"></a> 
@@ -23,6 +23,16 @@
                 <a href="#" style="cursor:pointer;"><img src="Imagens/you.png" alt="Canal Youtube" class="redes_sociais" style="margin-left: 10px"></a>           
     
         </div>
+
+        <div align='right'>
+                        <form class="form-inline">
+                            <input id="EmailLogin"  type="email" placeholder="Email">
+                            <input id="SenhaLogin"  type="password" placeholder="Senha">
+                            <button type="button">Entrar</button> 
+                        </form>
+                        <a href="#" style="margin-right:20px;">Cadastrar-se</a>
+                        <a href="#">Esqueceu sua senha? </a>       
+                    </div>
 
         <nav class="nav center" aria-haspopup="true">
                 <h2 class="outline">Menu</h2>	
@@ -38,5 +48,33 @@
                 </nav>
 
                 <!-- BASICAMENTE UM FORMULÁRIO DE FEEDBACK -->
+                <div>
+                <Form style="left:20px;right: 40px">
+               <b> Identificação do Usuário </b><p>
+                   
+                Nome: <input type="text"><br>
+                Senha: <input type="password"><br>
+                E-mail: <input type="text"><br>
+                Sexo: 
+                <input type="radio" name="sexo">Masculino
+                <input type="radio" name="sexo" >Feminino <br>
+                Data de Nascimento: <input type="date"><p>
+
+           <b> Mensagem do Usuário </b> <br>
+                Grau de Urgência: 
+                           <select>
+                                <option value="0">Escolha um item...</option> 
+                                <option value="1"> Baixo</option>
+                                <option value="2"> Médio</option>
+                                <option value="3"> Alta</option>
+                            </select>
+                <br>
+                Mensagem: <br><textarea placeholder="Digite sua dúvida ou sugestão." style="height: 200px"></textarea><br>
+
+                <button type="button">Enviar</button>
+        </Form>
+</div>
+
+
 </body>
 </html>

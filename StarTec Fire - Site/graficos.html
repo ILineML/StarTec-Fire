@@ -15,7 +15,7 @@
 <body>
     
         <div>
-                <img src="Imagens/Logo.jpg" alt="Logo StarTec - Fire" class="logo">
+                <img src="Imagens/Logo01.png" alt="Logo StarTec - Fire" class="logo">
     
                 <a href="#" style="cursor:pointer;"><img src="Imagens/face.png" alt="Página facebook" class="redes_sociais" style="margin-left:1050px"></a> 
                 <a href="#" style="cursor:pointer;"><img src="Imagens/insta.png" alt="Página Instagram" class="redes_sociais" style="margin-left: 10px"></a> 
@@ -40,5 +40,68 @@
                 <!-- AQUI DEVERÁ APARECER OS GRÁFICOS DAS TEMPERATURAS(DIARIAS, SEMANAIS, MENSAIS, ANUAIS) DE ACORDO DA PREFERENCIA
                 DO USUÁRIO -->
 
+                <div class="div_graficos">
+                        <button type="button" onclick="btnDia()">Diário</button>
+
+                        <button type="button" onclick="btnSemana()">Semanal</button>
+
+                        <button type="button" onclick="btnMes()">Mensal</button>
+
+                        <button type="button" onclick="btnAno()">Anual</button>
+
+                        <div style="display: none;" id="div_pesquisa_dia">
+
+                                <input type="date" id="pesquisa_dia" onload="getDate()">
+                                <button type="button" onclick="btnPesquisa()">Pesquisar dia</button>
+
+                        </div>
+
+                        <div id="grafico">
+                                <img src="Imagens/Graficos/dia.png" alt="" id="dia" class="graficos">
+                                <img src="Imagens/Graficos/semana.png" alt="" id="semana" class="graficos">
+                                <img src="Imagens/Graficos/mes.png" alt="" id="mes" class="graficos">
+                                <img src="Imagens/Graficos/ano.png" alt="" id="ano" class="graficos">
+                        
+                        </div>
+
+                </div>
 </body>
 </html>
+
+<script>
+        function btnPesquisa(){
+                limpar(); //Funcão para "limpar" as imagens
+                dia.style.display='block'; //Ativa o gráfico do dia
+                div_pesquisa_dia.style.display='block'; //Ativa a barra de pesquisa de dia
+        }
+
+        function btnDia(){
+                limpar();
+                div_pesquisa_dia.style.display='block';
+        }
+
+        function btnSemana(){
+                limpar();
+                semana.style.display='block'; //Ativa o gráfico de semana
+        }
+
+        function btnMes(){
+                limpar();
+                mes.style.display='block'; //Ativa o gráfico do mes
+    
+        }
+
+        function btnAno(){
+                limpar();
+                ano.style.display='block'; //Ativa o gráfico do ano
+        }
+
+        function limpar(){//Função que limpa as "imagens da tela"
+                div_pesquisa_dia.style.display='none';
+                dia.style.display='none';
+                semana.style.display='none';
+                mes.style.display='none';
+                ano.style.display='none';
+        }
+
+</script>
