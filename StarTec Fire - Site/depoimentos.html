@@ -14,14 +14,20 @@
 </head>
 <body>
 
-        <div>
+        <div class="divCabecalho">
                 <img src="Imagens/Logo01.png" alt="Logo StarTec - Fire" class="logo">
-    
-                <a href="#" style="cursor:pointer;"><img src="Imagens/face.png" alt="Página facebook" class="redes_sociais" style="margin-left:1050px"></a> 
-                <a href="#" style="cursor:pointer;"><img src="Imagens/insta.png" alt="Página Instagram" class="redes_sociais" style="margin-left: 10px"></a> 
-                <a href="#" style="cursor:pointer;"><img src="Imagens/twi.png" alt="Página Twitter" class="redes_sociais" style="margin-left: 10px"></a> 
-                <a href="#" style="cursor:pointer;"><img src="Imagens/you.png" alt="Canal Youtube" class="redes_sociais" style="margin-left: 10px"></a>           
-    
+
+                <div class="divLogin">
+                <form class="caixaTexto">
+                Login
+                <!-- AQUI PRECISA AUMENTAR O ESPAÇO ENTRE AS CAIXAS DE TEXTOS E PUXÁ-LAS UM POUCO MAIS PARA BAIXO -->
+                <input id="txtEntrar"  type="email" placeholder="Email">
+                <input id="txtSenha"  type="password" placeholder="Senha">
+                <button type="button" class="btnEntrar">Entrar</button> 
+                </form>
+                <a href="#" class="lblOpcoes">Cadastrar-se</a>
+                <a href="#" class="lblOpcoes">Esqueceu sua senha? </a>      
+                </div>      
         </div>
         
             <nav class="nav center" aria-haspopup="true">
@@ -38,6 +44,33 @@
             </nav>
 
             <!-- UM FORMULÁRIO ONDE O USUÁRIO PODE ESCREVER SOBRE O PROJETO -->
+
+
+    <!-- Rodapé -->
+    <footer>
+
+            <span class="redes_sociais">
+                    <a href="#" style="cursor:pointer;"><img src="Imagens/face.png" alt="Página facebook" class="redes_sociais" style="margin-left:1050px"></a> 
+                    <a href="#" style="cursor:pointer;"><img src="Imagens/insta.png" alt="Página Instagram" class="redes_sociais" style="margin-left: 10px"></a> 
+                    <a href="#" style="cursor:pointer;"><img src="Imagens/twi.png" alt="Página Twitter" class="redes_sociais" style="margin-left: 10px"></a> 
+                    <a href="#" style="cursor:pointer;"><img src="Imagens/you.png" alt="Canal Youtube" class="redes_sociais" style="margin-left: 10px"></a>               
+            </span>
+                        
+    <!-- Rodapé é necessário trocar as imagens das redes sociais e centralizar no rodapé, subir o texto, deixando centralizado
+    As cores não são oficias!!! -->
+    <p class="linksrodape">
+            <a href="graficos.html" class="linksrodape" >Gráficos</a>
+            |
+            <a href="depoimentos.html" class="linksrodape">Depoimentos</a>
+            |
+            <a href="guia.html" class="linksrodape">Guia em caso de incêndio</a>
+            |
+            <a href="sobre.html" class="linksrodape">Sobre Nós</a>
+            |
+            <a href="contatos.html" class="linksrodape">Fale Conosco</a>
+    </p>
+                        
+    </footer>
 
 </body>
 </html>

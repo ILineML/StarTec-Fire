@@ -3,6 +3,15 @@
 	margin: 0 auto; 
 	width: 50%;
 }
+
+
+.feedback{
+padding: 30px;
+width:100%; 
+text-align:center;
+}
+
+
 .texto_home{
 	font-size: medium;
 	border-style: solid;
@@ -11,42 +20,35 @@
 	
 }
 
-.login1{
-	display: flex;
-	justify-content: right;
-}
-
-.login{
+.divLogin{
 	width: 50%;
 	max-width: 300px;
+	float: right;
 }
 
-.form{
-	display: flex;
+.divCabecalho{
+	background-color: #00b7f0;
+}
+
+.caixaTexto{
+	width: 30px;
 	flex-direction: initial;
 }
 
-.logando{
+.btnEntrar, .div_graficos{
 	padding: 10px;
-	margin-bottom: 15px;
+	margin-top: 5px;
+	margin-bottom: 10px;
 	border: 1px solid #DDD;
 	border-radius: 5px;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 16px;
+	font-size: 12px;
 }
 
-.logando1{
-	padding: 6px;
-	margin-bottom: 9px;
-	border: 1px solid #DDD;
-	border-radius: 5px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 16px;
+.linksrodape{
+	color: white;
 }
 
-h1{
-	font-size: 3em;
-}
 
 .texto_home{
 	font-size: medium;
@@ -64,7 +66,8 @@ h1{
 .redes_sociais{
     width: 20px;
     height: 20px;
-    margin-bottom: 120px;
+	margin-bottom: 120px;
+	
 }
 
 .slide{
@@ -81,233 +84,41 @@ a, ul, li, article, main, footer, header, nav, section {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, main, footer, header, nav, section {
-	display: block;
-}
 ul {
 	list-style: none;
 }
-/* Fim  */
-/* utilidades */
-*, *:before, *:after {
-  -moz-box-sizing: border-box; 
-  	-webkit-box-sizing: border-box;
-   		box-sizing: border-box;
-}
-.cf:before,
-.cf:after {
-    content: " "; 
-    display: table;
-}
-.cf:after {
-    clear: both;
-}
-.cf {
-    *zoom: 1;
-}
-/* Fim utilidades */
+
 body {
 	font: 62.5%/1.4 verdana, sans-serif;
 }
-.tudo {
-	width:100%;
-	max-width:940px;
-	margin:0 auto;
-}
-/* Topo */
-header {
-	height: 5.6em;
-	background-color: #fff; 
-	background-image: url(imagens/logo200x46.png), url(imagens/grama85x70.jpg);
-	background-position: center,  center; 
-	background-repeat: no-repeat, repeat;
-}
-header h1 { text-indent:-99999px; }
-/* Fim Topo */
-/* Nota A estilização do menu de navegação responsivo esta no arquivo responsive-menu.css
-lincado a este documento - Ver seção head */
-/* Caixa de busca */
-form {position:relative;}
 
-.busca {
-	text-align:center;
-	background: #FFE4C4;
-	width: 100%;
-	height: 4em;
-	margin: 0.5em 0; 
-	
-}
-.busca input[type="search"] {
-	color: #ffffff;
-	font-size:1.5em;
-	width:98%;
-	height:1.5em;
-	border:none;
-	margin-top:0.5em;	
-	background: #4A555C;
-}
-.busca input[type="submit"] {
-	height:3em;
-	width:32px;
-	position: absolute;
-	right:1.5%;
-	cursor:pointer;
-	top:0;
-	text-indent:-9999px;
-	border:none;
-	background:#ffffff url(imagens/icones.png) -206px no-repeat;
-}
-/* Fim caixa de busca */
-/* CSS e script para Slide show de acordo com o Ninja Slider http://www.menucool.com/responsive-slider.aspx */
-/* Área de notícias */
-.noticias {
-	margin-top:1em;
-	padding-top:1.2em;
-	border-top:1px solid #00b7f0;
-}
-.box {
-	margin: 2em 0;
-	padding: 0 0.2em;
-}
-.box figure { margin:0; }
-.box h2 {
-	margin:0.2em 0 0.6em 0;
-	font-size:1.6em;
-}
-.box p {
-	font-size:1.2em;
-	color:#333;
-}
-.box a {
-	font-weight:bold;
-	text-decoration:none;
-	color:#555;
-}
-.box a:hover {
-	text-decoration:underline;
-}
-.box.noti h2 {
-	color:#941611;
-}
-/* Fim área de notícias */
-/* Área de informações */
-.informacoes {
-	background: #DEB887;
-	padding:1em 0;
-}
-.box.info figure {
-	float:left;
-	margin-right:1em;
-}
-
-.box.info h2 {color:#ffffff;}
-/* Fim área de informações */
-/* Área do rodapé */
 footer {
 	text-align:center;
+    margin: 0;
+	background: #323232;
+	border-radius: 7px;
 	font-size:1.2em;
+	
 	}
-.social {
-	height:5.2em; 
-	background:#4A555C url(imagens/grama85x70.jpg);
-}
-.social li {
-	margin-top:1.3em;
-	margin-right:1em;
-	display:inline-block;
-}
-.social li a {
-	display:block;width:32px;
-	height:32px;
-	background: url(imagens/icones.png) 0 center no-repeat;
-	text-indent:-9999px;
-}
-.social li:nth-child(2) a {background-position: -42px;}
-.social li:nth-child(3) a {background-position: -84px;}
-.social li:nth-child(4) a {background-position: -126px;}
-.social li:nth-child(5) a {background-position: -168px;}
-
-.links li {
-	height:64px;
-	float:right;
-	margin-top:1.3em;
-	display:inline-block;
-}
-.links li:first-child {float:left;margin-left:1em;}
-.links li:first-child span {color:blue;}
-.links li:last-child {line-height:5;margin-right:1em;}
-.links li:last-child span {color:#fbb718;}
-.links li:first-child a {
-	display:block;
-	height:64px;	
-	padding-left:50px;
-	background: url(imagens/icones.png) -250px center no-repeat;
-}
-.links a {
-	font-weight:bold;
-	color:#333;
-	text-decoration:none;
-}
 .outline {text-indent:-9999px; height:0; font-size:0;}
 /* Fim área do rodapé */
+
 @media screen and (min-width: 480px) {
 header {
 	height:8em;
 	background-image: url(imagens/logo280x65.png), url(imagens/grama85x70.jpg);	
 }
-.busca {
-	width: 80%;
-	height: 4em;
-	margin: 0.5em auto; 
-}
-.noti figure { float:left;width:25%; margin-right:2em;}	
-.noti texto  { float:right; }	
-.noti figure img { width:100%;}	
-}
-@media screen and (min-width: 800px) {
-.tudo {
-	position:relative;
-	background:#fff;
-	padding:0 0.5em;
-	box-shadow: 2px 2px 3px #555, -2px -2px 3px #555;
-}
+
 header {
 	height:12em;
 	border-radius:1em;
 	background-position: 7em, center;
 }
+
 nav {border-radius:1em;margin-top:0.5em;}
 .social {
 	background:none;
 	position:absolute;
 	right:7em;
 	top:0;
-}
-.busca {
-	width:22em;
-	height:3em;
-	position:absolute;
-	right:9.5em;
-	top:6em;
-	border-radius:0.5em;
-}
-.busca input[type="search"] {
-	background:none;
-	margin-top:0.3em
-}
-.busca input[type="submit"] {
-	height:30px;
-	margin-top:0;
-}
-#ninja-slider {border-radius:1em;margin-top:0.5em;}
-.noti {float:left;width:32%;}
-.noti:nth-child(2) {margin-left:2%; margin-right:2%;}
-.noti figure { float:left;width:100%; margin-right:0;}	
-.noti texto  { float:right; ;}	
-.noti figure img { width:100%;border-radius:1em;}	
-.informacoes{border-radius:1em;}
-.info {float:left;width:32%;padding:0 1em;} 
-.info:nth-child(2) {margin-left:2%; margin-right:2%;}
-.info h2 {font-size:1.2em;font-weight:bold;}
-.info figure img {border-radius:1em;}
 }
