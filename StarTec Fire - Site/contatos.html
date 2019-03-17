@@ -7,8 +7,6 @@
     <title>StarTec Fire - Fale Conosco</title>
 
     <link rel="stylesheet" href="Estilos/responsive-menu.css">
-    <link rel="stylesheet" href="Estilos/ninja-slider.css">
-    <script type="text/javascript" src="Script/ninja-slider.js"></script>
     <link rel="stylesheet" href="Estilos/style.css">
 
 </head>
@@ -18,15 +16,19 @@
                 <img src="Imagens/Logo01.png" alt="Logo StarTec - Fire" class="logo">
             
                     <div class="divLogin">
+
                         <form class="caixaTexto">
-                          Login
-                            <!-- AQUI PRECISA AUMENTAR O ESPAÇO ENTRE AS CAIXAS DE TEXTOS E PUXÁ-LAS UM POUCO MAIS PARA BAIXO -->
-                        <input id="txtEntrar"  type="email" placeholder="Email">
-                        <input id="txtSenha"  type="password" placeholder="Senha">
-                        <button type="button" class="btnEntrar">Entrar</button> 
+
+                           <h4 style="margin-bottom:3px;">Login</h4> 
+
+                        <input id="txtEntrar"  type="email" placeholder="Email" class="acesso">
+                        <input id="txtSenha"  type="password" placeholder="Senha" class="acesso">
+
+                        <button type="button" class="btnEntrar acesso">Entrar</button> 
+
                         </form>
-                        <a href="#" class="lblOpcoes">Cadastrar-se</a>
-                        <a href="#" class="lblOpcoes">Esqueceu sua senha? </a>      
+                        <a href="#" class="acesso">Cadastrar-se</a>
+                        <a href="#" class="acesso">Esqueceu sua senha? </a>      
                     </div>      
             </div>
 
@@ -44,29 +46,21 @@
                 </nav>
 
                 <!-- BASICAMENTE UM FORMULÁRIO DE FEEDBACK -->
-    <form class="feedback">
-            Identificação do Usuário
-            
-            <br>
-            <br>
-                   
-            Nome: 
-            <br><input type="text" id="txtNomeCont"><br><br>
+    <form>
+        <h1 style="margin-top:10px; margin-left: 15px;">Contato</h1>
 
+        <fieldset class="borda">
+            Nome:<br>
+            <input type="text" id="txtNomeCont" required><br><br> 
+        
             E-mail: 
-            <br><input type="text" id="txtEmailCont"><br><br>
+            <br><input type="text" id="txtEmailCont" required><br><br>          
 
-            Sexo: 
-            <input type="radio" name="sexo">Masculino
-            <input type="radio" name="sexo" >Feminino <br><br>
-
-           <b> Mensagem do Usuário </b> 
-           <br>
-           <br>
+           <h3 style="margin-bottom: 25px;"> Mensagem do Usuário </h3> 
 
                 Grau de Urgência: 
-                    <select>
-                        <option value="0">Escolha um item...</option> 
+                    <select required>
+                        <option value="">Escolha um item...</option> 
                         <option value="1"> Baixo</option>
                         <option value="2"> Médio</option>
                         <option value="3"> Alta</option>
@@ -74,25 +68,27 @@
             <br>
             <br>
             Mensagem: <br>
-            <textarea placeholder="Digite sua dúvida ou sugestão." style="height: 100px; width: 500px;"></textarea><br>
+            <textarea placeholder="Digite sua dúvida ou sugestão." style="height: 100px; width: 500px;" required></textarea><br>
 
-            <button type="button">Enviar</button>
+            <button style="margin-top:30px; margin-bottom: 10px; border-radius: 10px;">Enviar sugestão</button>
+        </fieldset>
     </form>
 
     <!-- Rodapé -->
     <footer>
 
             <span class="redes_sociais">
-              <a href="#" style="cursor:pointer;"><img src="Imagens/face.png" alt="Página facebook" class="redes_sociais" style="margin-left:1050px"></a> 
-              <a href="#" style="cursor:pointer;"><img src="Imagens/insta.png" alt="Página Instagram" class="redes_sociais" style="margin-left: 10px"></a> 
-              <a href="#" style="cursor:pointer;"><img src="Imagens/twi.png" alt="Página Twitter" class="redes_sociais" style="margin-left: 10px"></a> 
-              <a href="#" style="cursor:pointer;"><img src="Imagens/you.png" alt="Canal Youtube" class="redes_sociais" style="margin-left: 10px"></a>               
+              <a href="#" style="cursor:pointer;"><img src="Imagens/face.png" alt="Página facebook" class="redes_sociais" ></a> 
+              <a href="#" style="cursor:pointer;"><img src="Imagens/insta.png" alt="Página Instagram" class="redes_sociais"></a> 
+              <a href="#" style="cursor:pointer;"><img src="Imagens/twi.png" alt="Página Twitter" class="redes_sociais"></a> 
+              <a href="#" style="cursor:pointer;"><img src="Imagens/you.png" alt="Canal Youtube" class="redes_sociais"></a>               
             </span>
                                 
             <!-- Rodapé é necessário trocar as imagens das redes sociais e centralizar no rodapé, subir o texto, deixando centralizado
             As cores não são oficias!!! -->
-            <p class="linksrodape">
-                    <a href="graficos.html" class="linksrodape" >Gráficos</a>
+            <br>
+            <span class="linksrodape">
+                    <a href="graficos.html" class="linksrodape">Gráficos</a>
                     |
                     <a href="depoimentos.html" class="linksrodape">Depoimentos</a>
                     |
@@ -101,7 +97,10 @@
                     <a href="sobre.html" class="linksrodape">Sobre Nós</a>
                     |
                     <a href="contatos.html" class="linksrodape">Fale Conosco</a>
-            </p>
+                    <br>
+                    <br>
+                    <br>
+            </span>
                                 
     </footer>
 
