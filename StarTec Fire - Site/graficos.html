@@ -7,21 +7,27 @@
     <title>StarTec Fire - Gráficos</title>
 
     <link rel="stylesheet" href="Estilos/responsive-menu.css">
-    <link rel="stylesheet" href="Estilos/ninja-slider.css">
-    <script type="text/javascript" src="Script/ninja-slider.js"></script>
     <link rel="stylesheet" href="Estilos/style.css">
 
 </head>
 <body>
     
-        <div>
+        <div class="divCabecalho">
                 <img src="Imagens/Logo01.png" alt="Logo StarTec - Fire" class="logo">
-    
-                <a href="#" style="cursor:pointer;"><img src="Imagens/face.png" alt="Página facebook" class="redes_sociais" style="margin-left:1050px"></a> 
-                <a href="#" style="cursor:pointer;"><img src="Imagens/insta.png" alt="Página Instagram" class="redes_sociais" style="margin-left: 10px"></a> 
-                <a href="#" style="cursor:pointer;"><img src="Imagens/twi.png" alt="Página Twitter" class="redes_sociais" style="margin-left: 10px"></a> 
-                <a href="#" style="cursor:pointer;"><img src="Imagens/you.png" alt="Canal Youtube" class="redes_sociais" style="margin-left: 10px"></a>           
-    
+
+                <div class="divLogin">
+                <form class="caixaTexto">
+                <h4 style="margin-bottom:3px;">Login</h4> 
+
+                        <input id="txtEntrar"  type="email" placeholder="Email" class="acesso">
+                        <input id="txtSenha"  type="password" placeholder="Senha" class="acesso">
+
+                        <button type="button" class="btnEntrar acesso">Entrar</button> 
+
+                        </form>
+                        <a href="#" class="acesso">Cadastrar-se</a>
+                        <a href="#" class="acesso">Esqueceu sua senha? </a>     
+                </div>      
         </div>
 
         <nav class="nav center" aria-haspopup="true">
@@ -37,27 +43,24 @@
                     </ul>
                 </nav>
 
-                <!-- AQUI DEVERÁ APARECER OS GRÁFICOS DAS TEMPERATURAS(DIARIAS, SEMANAIS, MENSAIS, ANUAIS) DE ACORDO DA PREFERENCIA
-                DO USUÁRIO -->
-
                 <div class="div_graficos">
-                        <button type="button" onclick="btnDia()">Diário</button>
+                        <button type="button" onclick="btnDia()" class="botao_graficos" style="margin-left: 500px;">Diário</button>
 
-                        <button type="button" onclick="btnSemana()">Semanal</button>
+                        <button type="button" onclick="btnSemana()" class="botao_graficos">Semanal</button>
 
-                        <button type="button" onclick="btnMes()">Mensal</button>
+                        <button type="button" onclick="btnMes()" class="botao_graficos">Mensal</button>
 
-                        <button type="button" onclick="btnAno()">Anual</button>
+                        <button type="button" onclick="btnAno()" class="botao_graficos">Anual</button>
 
-                        <div style="display: none;" id="div_pesquisa_dia">
+                        <div id="div_pesquisa_dia" style="margin-left: 500px;">
 
-                                <input type="date" id="pesquisa_dia" onload="getDate()">
-                                <button type="button" onclick="btnPesquisa()">Pesquisar dia</button>
+                                <input type="date" id="pesquisa_dia" class="data">
+                                <button type="button" onclick="btnPesquisa()" class="botao_graficos">Pesquisar dia</button>
 
                         </div>
 
                         <div id="grafico">
-                                <img src="Imagens/Graficos/dia.png" alt="" id="dia" class="graficos">
+                                <img src="Imagens/Graficos/dia.png" alt="" id="dia" style="margin: 0 auto; width: 50%; display: block;">
                                 <img src="Imagens/Graficos/semana.png" alt="" id="semana" class="graficos">
                                 <img src="Imagens/Graficos/mes.png" alt="" id="mes" class="graficos">
                                 <img src="Imagens/Graficos/ano.png" alt="" id="ano" class="graficos">
@@ -65,6 +68,36 @@
                         </div>
 
                 </div>
+
+        <footer>
+
+                <span class="redes_sociais">
+                        <a href="#" style="cursor:pointer;"><img src="Imagens/face.png" alt="Página facebook" class="redes_sociais"></a> 
+                        <a href="#" style="cursor:pointer;"><img src="Imagens/insta.png" alt="Página Instagram" class="redes_sociais"></a> 
+                        <a href="#" style="cursor:pointer;"><img src="Imagens/twi.png" alt="Página Twitter" class="redes_sociais"></a> 
+                        <a href="#" style="cursor:pointer;"><img src="Imagens/you.png" alt="Canal Youtube" class="redes_sociais"></a>               
+                </span>
+                            
+        <!-- Rodapé é necessário trocar as imagens das redes sociais e centralizar no rodapé, subir o texto, deixando centralizado
+        As cores não são oficias!!! -->
+		<br>
+        <span class="linksrodape">
+                <a href="graficos.html" class="linksrodape" >Gráficos</a>
+                |
+                <a href="depoimentos.html" class="linksrodape">Depoimentos</a>
+                |
+                <a href="guia.html" class="linksrodape">Guia em caso de incêndio</a>
+                |
+                <a href="sobre.html" class="linksrodape">Sobre Nós</a>
+                |
+                <a href="contatos.html" class="linksrodape">Fale Conosco</a>
+				<br>
+                <br>
+                <br>
+        </span>
+                            
+        </footer>
+                            
 </body>
 </html>
 
@@ -76,7 +109,6 @@
         }
 
         function btnDia(){
-                limpar();
                 div_pesquisa_dia.style.display='block';
         }
 
