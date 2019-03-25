@@ -27,21 +27,22 @@
 }
 
 .logando{
-	padding: 10px;
-	margin-bottom: 15px;
+	padding: 2px;
+	margin-bottom: 1px;
 	border: 1px solid #DDD;
-	border-radius: 5px;
+	border-radius: 7px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
 }
 
 .logando1{
-	padding: 6px;
+	padding: 5px;
 	margin-bottom: 9px;
-	border: 1px solid #DDD;
+	border: 1px;
 	border-radius: 5px;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 16px;
+	font-size: 14px;
+	color:whitesmoke;
 }
 
 h1{
@@ -57,8 +58,11 @@ h1{
 }
 
 .logo{
-    width: 150px;
+	width: 250px;
 	height: 150px;
+	background-color:#102331;
+	
+	
 }
 
 .redes_sociais{
