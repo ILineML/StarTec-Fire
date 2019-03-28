@@ -55,8 +55,22 @@ text-align:center;
 	border-style: solid;
 	margin: 30px;
 	font-family: 'Times New Roman', Times, serif;
-	
 }
+.texto_simulador{
+	font-size: medium;
+	border-style: solid;
+	margin: 30px;
+	font-family: 'Arial', Times, serif;
+	color: rgb(253, 253, 253);
+}
+.link {
+	font-size: medium;
+	border-style: none;
+	font-family: 'Times New Roman', Times, serif;
+	color: white;
+
+}
+
 
 .logo{
     width: 150px;
@@ -121,4 +135,15 @@ nav {border-radius:1em;margin-top:0.5em;}
 	position:absolute;
 	right:7em;
 	top:0;
+}
+
+.borda{
+	border-radius: solid rgb(12, 12, 12) 2px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: large;
+width: 60%;
+background-color:#9ac5e7;
+text-align: center;
+margin-left: 20%;
+margin-right: 10%;
 }
