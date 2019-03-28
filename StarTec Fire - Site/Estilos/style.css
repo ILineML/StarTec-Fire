@@ -4,13 +4,19 @@
 	width: 50%;
 }
 
-
-.feedback{
-padding: 30px;
-width:100%; 
-text-align:center;
+fieldset{
+	width:97%;
+	text-align:left;
 }
 
+.borda{
+	padding-top: 10px;
+	border-color:black;
+	border-radius:15px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	font-size: 16px;
+}
 
 .texto_home{
 	font-size: medium;
@@ -35,18 +41,66 @@ text-align:center;
 	flex-direction: initial;
 }
 
-.btnEntrar, .div_graficos{
+<<<<<<< HEAD
+.logando{
+	padding: 2px;
+	margin-bottom: 1px;
+	border: 1px solid #DDD;
+	border-radius: 7px;
+=======
+.acesso{
+	margin-bottom:5px;
+	margin-top: 5px;
+	margin-right: 15px;
+}
+
+.btnEntrar{
+	margin-bottom: 2px;
+	border-radius: 6px;
+}
+
+.div_graficos{
 	padding: 10px;
 	margin-top: 5px;
 	margin-bottom: 10px;
 	border: 1px solid #DDD;
-	border-radius: 5px;
+	border-radius: 10px;
+>>>>>>> 94e3a66267f380c067ff953e4021357c81a15520
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
 }
 
+<<<<<<< HEAD
+.logando1{
+	padding: 5px;
+	margin-bottom: 9px;
+	border: 1px;
+	border-radius: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color:whitesmoke;
+=======
 .linksrodape{
+	font-size: 15px;
 	color: white;
+>>>>>>> 94e3a66267f380c067ff953e4021357c81a15520
+}
+
+.botao_graficos{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		color: #1b0447;
+		margin: 5px;
+		border-radius: 7px;
+		width: 100px; 
+		height: 60px;
+}
+
+.data{
+	width: 200px;
+	border-radius: 4px;
+	color: #1b0447;
+	margin-right: 20px;
 }
 
 
@@ -73,14 +127,19 @@ text-align:center;
 
 
 .logo{
-    width: 150px;
+	width: 250px;
 	height: 150px;
+	background-color:#102331;
+	
+	
 }
 
 .redes_sociais{
+	margin-top: 10px;
+	margin-right: 10px;
     width: 20px;
     height: 20px;
-	margin-bottom: 120px;
+	margin-bottom: 50px;
 	
 }
 
@@ -88,7 +147,7 @@ text-align:center;
 	width: 300px;
     height: 300px;
 }
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, 
+html, body, div, span, p, blockquote, 
 a, ul, li, article, main, footer, header, nav, section {
 	margin: 0;
 	padding: 0;
