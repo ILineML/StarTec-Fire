@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simulador Financeiro</title>
+</head>
+<body>
+    <h2>SIMULADOR FINANCEIRO</h2>
+
+    <form id="questionario1">
+    Sua empresa realiza manutenções mensais nas instalações elétricas?
+    <button type="button" onclick="realiza()">Sim</button>
+    <button type="button" onclick="nao_realiza()">Não</button>
+    </form>
+    
+    <div id="div_mensagem" style="color: brown"></div>
+    
+    <br>
+    
+    <form id="botao_vamo" style="display: none">
+    <button type="button" onclick="orçamento()">Fazer um orçamento!</button>
+    </form>
+
+    <form style="display:none" id="questionarservico">
+    O serviço é terceirizado?
+    <button type="button" onclick="terceirizado()">Sim</button>
+    <button type="button" onclick="proprio()">Não</button>
+    </form>
+    <br>
+
+    <form style="display: none" id="faturamento">
+            Qual o faturamento mensal da sua empresa?
+        <select id="lucro">
+            <option  value="0">Escolha um dos valores</option> 
+            <option  value="25000">Até R$25.000/MÊS</option>   
+            <option  value="45000">De R$25.000 a R$50.000/MÊS</option>
+            <option  value="80000">De R$50.000 a R$100.000/MÊS</option>
+            
+    </select>
+    </form>
+<br>    
+    <form id="valorservico" style="display:none">
+            Qual o valor do serviço?
+            <input id="servico_preco" type="number" placeholder="Valor do serviço">
+
+    </form>
+<br>
+    <form id="funcionario_total" style="display: none">
+        
+    Quantos funcionários realizam o serviço?
+    <input  id="quantidadefuncio" type="number" placeholder="Digite o número">
+    </form>
+<br>
+    <form id="salario_total" style="display:none">
+    Qual o salário desses funcionários?
+    <input id="salario" type="number" placeholder="Digite o valor">
+    </form>
+<br>
+    <form id="manutencao_propria" style="display: none">
+        <button type="button" onclick="gastos_proprios()">Estimar gastos com manutenção própria:</button>
+    </form>
+
+    <form id="manutencao_terceiro" style="display: none">
+        <button type="button" onclick="gastos_terceiros()">Estimar gastos com manutenção terceirizada</button>
+
+    </form>
+
+</form>
+
+    <div id="div_mensagem2"></div>
+
+
+</body>
+</html>
+<script>
+function realiza() {
+questionarservico.style.display='inline';
+div_mensagem.style.display='none';
+botao_vamo.style.display='none';
+}
+function nao_realiza() {
+div_mensagem.style.display='inline';
+div_mensagem.innerHTML=`O ambiente empresarial pode parecer inofensivo para os incêndios. Porém, apenas em 2015
+ foram contabilizados 1349 ocorrências de incêndios em ambientes empresariais, o que dá uma média de 112 acidentes
+  por mês. Os dados são do Instituto Sprinkler Brasil. Por que não se prevenir? Faça o orçamento!`;
+  questionarservico.style.display='none';
+botao_vamo.style.display='inline';
+faturamento.style.display='none';
+valorservico.style.display='none';  
+funcionario_total.style.display='none';
+salario_total.style.display='none';
+manutencao_propria.style.display='none';
+
+}
+function orçamento() {
+div_mensagem.style.display='none';
+questionarservico.style.display='inline';
+botao_vamo.style.display='none';
+}
+function terceirizado() {
+faturamento.style.display='inline';
+valorservico.style.display='inline';
+funcionario_total.style.display='none';
+salario_total.style.display='none';
+manutencao_propria.style.display='none';
+manutencao_terceiro.style.display='inline';
+
+}
+function proprio() {
+faturamento.style.display='inline';
+valorservico.style.display='none';
+funcionario_total.style.display='inline';
+salario_total.style.display='inline';
+manutencao_propria.style.display='inline';
+manutencao_terceiro.style.display='none';
+}
+function gastos_proprios() {
+var mensal_1 = (quantidadefuncio.value * salario.value);
+var anual = mensal_1 * 12;
+var frase = `Mensalmente, sua empresa gasta R$${mensal_1} com manutenção própria em instalações. Anualmente, este valor pode chegar
+a aproximadamente R$${anual}.`
+div_mensagem2.innerHTML = frase;
+}
+function gastos_terceiros() {
+var mensal_2 = servico_preco.value;
+var anual_2 = mensal_2 * 12;
+var frase = `Mensalmente, sua empresa gasta R$${mensal_2} com manutenção própria em instalações. Anualmente, este valor pode chegar
+a aproximadamente R$${anual_2}.`
+div_mensagem2.innerHTML = frase;
+}

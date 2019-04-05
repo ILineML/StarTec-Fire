@@ -1,13 +1,13 @@
 ﻿.nav {
 	position: relative;
 	z-index: 99999;
-	background-color: #941611;
+	background-color: #d8dfe7;
 	height: 4em;
 	font-weight: bold;
 }
 .nav ul {
 	margin: 0;
-	padding: 0;
+	padding: 0; 
 }
 .nav li {
 	font-size: 1.4em;
@@ -25,13 +25,13 @@
 	
 }
 .nav a:hover {
-	background: #4A555C;
+	background: rgb(206, 16, 16);
 	color: #fff;
 	border-radius: 0.4em;
 }
 .nav .current a {
 	cursor:default;
-	background: #4A555C;
+	background: rgb(206, 16, 16;
 	color: #fff;
 	border-radius: 0.4em;
 }
